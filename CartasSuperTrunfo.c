@@ -40,15 +40,15 @@ int main() {
 
   // Área para entrada de dados
 
-  printf("Cadastar Carta 1:\n");
+  printf("Cadastar Carta :\n");
   printf("Digite o Estado de (A-H) : ");
-  scanf("%c", &estado1);
+  scanf(" %c", &estado1);
 
   printf("Digite o Codigo da carta Ex(A01): ");
   scanf("%s", codigo1);
 
   printf("Digite o Nome da Cidade: ");
-  scanf("%[^\n]", cidade1);   // Lê até a quebra de linha
+  scanf(" %[^\n]", cidade1);    // Lê até a quebra de linha
 
   printf("Digite a População: ");
   scanf("%d", &populacao1);
@@ -64,15 +64,15 @@ int main() {
 
   //--------- CARTA 02---------
 
-   printf("Cadastar Carta 2:\n");
+  printf("Cadastar Carta :\n");
   printf("Digite o Estado de (A-H) : ");
-  scanf("%c", &estado2);
+  scanf(" %c", &estado2);
 
-  printf("Digite o Codigo da carta Ex(B02): ");
+  printf("Digite o Codigo da carta Ex(A02): ");
   scanf("%s", codigo2);
 
   printf("Digite o Nome da Cidade: ");
-  scanf("%[^\n]", cidade2);    // Lê até a quebra de linha
+  scanf(" %[^\n]", cidade2);    // Lê até a quebra de linha
 
   printf("Digite a População: ");
   scanf("%d", &populacao2);
@@ -88,7 +88,7 @@ int main() {
 
   // Área para exibição dos dados da cidade
 
-  printf("\n --- Carta ---\n");
+  printf("\n --- Carta 1 ---\n");
 
   printf("Estado; %c\n", estado1);
 
@@ -98,15 +98,15 @@ int main() {
 
   printf("População: %d\n", populacao1);
 
-  printf("Aréa da Cidade: %.2f\n KM²", area1);
+  printf("Aréa da Cidade: %.2f KM²\n ", area1);
 
-  printf("PIB é: %.2f\n bilhões de reais", pib1);
+  printf("PIB é: %.2f bilhões de reais\n", pib1);
 
   printf("Número de Pontos Turiscos: %d\n", pontoTuristicos1);
 
   //------- saida carta 02 -------------
 
-  printf("\n --- Carta ---\n");
+  printf("\n --- Carta 2 ---\n");
 
   printf("Estado; %c\n", estado2);
 
@@ -116,9 +116,9 @@ int main() {
 
   printf("População: %d\n", populacao2);
 
-  printf("Aréa da Cidade: %.2f\n KM²", area2);
+  printf("Aréa da Cidade: %.2f KM²\n ", area2);
 
-  printf("PIB é: %.2f\n bilhões de reais", pib2);
+  printf("PIB é: %.2f bilhões de reais\n", pib2);
 
   printf("Número de Pontos Turiscos: %d\n", pontoTuristicos2);
 
